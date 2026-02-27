@@ -1,0 +1,317 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.App-header {
+  margin-bottom: 2rem;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #646cff;
+}
+
+main {
+  width: 100%;
+}
+
+/* 登录表单样式 */
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.login-form h2 {
+  margin-bottom: 1.5rem;
+}
+
+.login-form div {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #646cff;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 1rem;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #535bf2;
+  box-shadow: 0 0 0 2px rgba(83, 91, 242, 0.2);
+}
+
+.login-form button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login-form button:hover {
+  background: #535bf2;
+}
+
+/* Todo列表样式 */
+.todo-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.todo-header h2 {
+  margin: 0;
+}
+
+.todo-header button {
+  background: #ff6464;
+}
+
+.todo-header button:hover {
+  background: #ff5252;
+  border-color: #ff5252;
+}
+
+.todo-form {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #646cff;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 1rem;
+}
+
+.todo-form input:focus {
+  outline: none;
+  border-color: #535bf2;
+  box-shadow: 0 0 0 2px rgba(83, 91, 242, 0.2);
+}
+
+.todo-form button {
+  padding: 0.8rem 1.5rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.todo-form button:hover {
+  background: #535bf2;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.2s;
+}
+
+.todo-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.todo-item.completed {
+  background: rgba(100, 255, 100, 0.1);
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.todo-item .todo-content {
+  flex: 1;
+  text-align: left;
+}
+
+.todo-item h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.todo-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.todo-item .todo-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.todo-item button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.todo-item button.edit {
+  background: #64b5f6;
+}
+
+.todo-item button.edit:hover {
+  background: #42a5f5;
+  border-color: #42a5f5;
+}
+
+.todo-item button.delete {
+  background: #ff6464;
+}
+
+.todo-item button.delete:hover {
+  background: #ff5252;
+  border-color: #ff5252;
+}
+
+.todo-item button.complete {
+  background: #66bb6a;
+}
+
+.todo-item button.complete:hover {
+  background: #4caf50;
+  border-color: #4caf50;
+}
+
+/* 分页样式 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.pagination button.active {
+  background: #646cff;
+  border-color: #646cff;
+}
+
+/* 编辑表单样式 */
+.edit-form {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.edit-form input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #646cff;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 0.9rem;
+}
+
+.edit-form button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.edit-form button.save {
+  background: #66bb6a;
+}
+
+.edit-form button.save:hover {
+  background: #4caf50;
+  border-color: #4caf50;
+}
+
+.edit-form button.cancel {
+  background: #ff6464;
+}
+
+.edit-form button.cancel:hover {
+  background: #ff5252;
+  border-color: #ff5252;
+}
